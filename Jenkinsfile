@@ -1,10 +1,21 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage ('Testando ...'){
-            bat 'echo Deu certo!'
-            bat 'Vamos ao proximo passo'
-        }
 
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
 }
