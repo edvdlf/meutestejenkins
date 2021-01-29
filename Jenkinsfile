@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage ('Testando ...'){
             bat 'echo Deu certo!'
+            bat 'Vamos ao proximo passo'
         }
 
     }
